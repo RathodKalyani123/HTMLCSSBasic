@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:2em;
+        }
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color:lightgreen;
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: column wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContainerItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        .sideBarLeftItem{
+            background: gold;
+        }
+        .sideBarRightItem{
+            background: hotpink;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+        .mainContentItem{
+            flex: 3 0px;
+        }
+        .sideBarLeftItem{
+            order: 1;
+        }
+        .mainContentItem{
+            order: 3;
+        }
+        .sideBarRightItem{
+            order: 3;
+        }
+    </style>
+</head>
+<body bgcolor="lightpink">
+<header class="heaaderContainer"></header>
+<div class="mainContainer">
+    <section class="maincontentItem">
+        <article>
+            <h2>First Article</h2>
+            <p>Bridgelabz is an AWS recognised incubator and is soley focused on solving tech 
+                employability. Over the last 5 years, it has worked with 500+ top tech companies ...</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>BridgeLabz Job Guarantee Fellowship Program is a 16 weeks tech-intensive program designed for deserving candidates looking for high paying development tech jobs. Through hands-on experiential learning experience,
+                 we groom candidates and give them job guarantee with a starting salary from Rs. 3 lacs up to Rs. 6 lacs.</p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>The Peace Corps Coverdell Fellowship Program is specifically for Peace Corps Volunteers. 
+                Our Goal is to enable every volunteer to get a Masters in Applied Community Development.</p>
+            <p>The fellowship program for 4 months is 100% planned as per jobs requirement and Good place to improve coding. </p>
+        </article>
+    </section>
+    <sidebar class="sideBarItem sideBarLeftItem"></sidebar>
+    <sideBar class="sideBarItem sideBarRightItem"></sideBar>
+</div>
+<footer class="footerContainer">Footer</footer>
+<script type="text/javascript"></script>
+</body>
+</html>
